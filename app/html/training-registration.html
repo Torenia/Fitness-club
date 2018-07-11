@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Fitness Club Olimpic</title>
+    <meta name="description" content="Olimpic - fitness club with different kinds of load">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+
+<div class="menu">
+
+<!---Logo-->
+
+    <div class="logo">
+        <img src="../images/logo/logo.jpg" alt="logo" class="logo__img">
+    </div>
+
+<!---Menu-->
+
+    <div class="menu__navigation" id="menu">
+        <a class="menu__item" href="../index.html">Home</a>
+        <div class="menu__sub-menu sub-menu">
+            <button class="sub-menu__btn" id="first-sub-menu">Services
+                <i class="fa">&#xf0d7;</i>
+            </button>
+            <div class="sub-menu__content" id="first-menu">
+                <a class="sub-menu__item" href="services.html#pilates">Pilates</a>
+                <a class="sub-menu__item" href="services.html#stretching">Stretching</a>
+                <a class="sub-menu__item" href="services.html#yoga">Yoga</a>
+                <a class="sub-menu__item" href="services.html#sculpt">Sculpt</a>
+                <a class="sub-menu__item" href="services.html#personal training">Personal training</a>
+            </div>
+        </div>
+        <div class="menu__sub-menu sub-menu">
+            <button class="sub-menu__btn" id="second-sub-menu">Training registration
+                <i class="fa">&#xf0d7;</i>
+            </button>
+            <div class="sub-menu__content" id="second-menu">
+                <a class="sub-menu__item" href="training-registration.html#group-training-registration">Group training registration</a>
+                <a class="sub-menu__item" href="training-registration.html#personal-training-registration">Personal training registration </a>
+                <a class="sub-menu__item" href="training-registration.html#buy-a-subscription">Buy a
+                    subscription</a>
+            </div>
+        </div>
+        <a class="menu__item" href="photogallery.html">Photogallery</a>
+        <a class="menu__item" href="contacts.html">Contacts</a>
+
+<!--Search field-->
+
+        <div class="search">
+            <form method="get">
+                <input class="search__input" type="text" placeholder="Search.." name="search">
+                <button class="search__button" type="submit"><i class="fa">&#xf002;</i></button>
+            </form>
+        </div>
+        <a href="javascript:void(0);" class="menu__item icon"
+           onclick="responsiveMenu();">&#9776;</a>
+    </div>
+
+</div>
+
+
+<!--Group training registration-->
+
+<div class="training" id="group-training-registration">
+
+    <h1 class="training__title">Training Schedule</h1>
+
+    <h3 class="training__condition">Please choose a day and a training to register for group training</h3>
+    <div id="training-box"></div>
+
+</div>
+
+
+<!-- The modal window for free places-->
+
+<div id="modal-window" class="modal">
+
+    <div class="modal__content">
+        <span class="modal__close" onclick="closeModalWindow();">&times;</span>
+        <div class="modal__form">
+            <p>Please enter your details</p><br>
+            <input class="modal__input" type="text" name="name" placeholder="NAME" id="name"><br>
+            <input class="modal__input" type="text" name="phone" placeholder="PHONE" id="phone"><br>
+            <input class="modal__input" type="email" name="email" placeholder="EMAIL" id="email">
+            <div>
+                <button class="modal__button" id="submit">Enter</button>
+            </div>
+            <p id="warning"></p>
+        </div>
+    </div>
+
+</div>
+
+<!-- The ansver modal window -->
+
+<div id="ansver-modal" class="modal-ansver">
+
+    <div class="modal-ansver__content">
+        <span class="modal-ansver__close" onclick="closeModalAnsver();">&times;</span>
+        <p id="ansver">Thank you! We will contact you</p>
+    </div>
+
+</div>
+
+<!-- The modal window for not free places-->
+
+<div id="prevention-modal" class="modal-ansver">
+
+    <div class="modal-ansver__content">
+        <span class="modal-ansver__close" onclick="closeModalPrevention();">&times;</span>
+        <div>Sorry, no available places!</div>
+    </div>
+
+</div>
+
+
+<!--Personal training registration-->
+
+<h2 class="training-heading" id="personal-training-registration">Personal training registration</h2>
+
+
+<div class="contacts__form">
+    <form>
+        <p class="contacts__form-title">Please enter your details to register for personal training</p>
+        <div class="contacts__input-div"><input class="contacts__input" type="text" name="text" placeholder="NAME">
+        </div>
+        <div class="contacts__input-div"><input class="contacts__input" type="text" name="phone" placeholder="PHONE">
+        </div>
+        <div class="contacts__input-div"><input class="contacts__input" type="email" name="email" placeholder="EMAIL">
+        </div>
+        <div class="personal-training__input"><input class="contacts__input" type="text" name="time"
+                                                     placeholder="PREFERRED TIME"></div>
+        <div class="contacts__input-div"><textarea class="contacts__input textarea" name="text"
+                                                   rows="7">YOUR MESSAGE</textarea></div>
+        <div class="contacts__input-div"><input class="contacts__input" type="submit" value="ENTER"></div>
+    </form>
+</div>
+
+
+<!--Buy a subscription-->
+
+<h2 class="training-heading" id="buy-a-subscription">Buy a subscription</h2>
+
+<div class="subscription-box">
+
+    <div class="subscription-box__subscription">
+        <div><h5 class="subscription-box__heading">ACTIVE BASIC</h5>
+            <p class="subscription-box__condition">1 year validity</p>
+            <p class="subscription-box__condition">Visit on the weekdays</p>
+        </div>
+    </div>
+
+    <div class="subscription-box__subscription">
+        <div><h5 class="subscription-box__heading">UNLIMITED</h5>
+            <p class="subscription-box__condition">1 year validity</p>
+            <p class="subscription-box__condition">Visit all days of the week</p>
+        </div>
+    </div>
+
+    <div class="subscription-box__subscription">
+        <div><h5 class="subscription-box__heading">LIMITED</h5>
+            <p class="subscription-box__condition">1 month</p>
+            <p class="subscription-box__condition">Visit all days of the week</p>
+        </div>
+    </div>
+
+</div>
+
+
+<!--Footer-->
+
+<div class="footer">
+    <div class="footer_blocks">
+        <p class="footer_paragraph">If you would like regular updates about events and goings-on at Olimpic fitness-club
+            <a href="contacts.html" class="footer__contacts">sign up</a>
+            to our newsletter.</p>
+        <p class="footer_paragraph"> 55A Tooley St, London SE1 2QN, United Kingdom;· +44 7835 932617; <a
+                href="mailto:info@olimpic.com" class="footer__contacts"> WRITE US</a></p>
+    </div>
+
+    <div class="footer_blocks">
+        <p class="footer_paragraph">&copy; COPYRIGHT 2018. ALL RIGHTS RESERVED</p>
+
+<!--Share Buttons-->
+
+        <ul class="share-buttons">
+            <li class="share-buttons__button"><a href="https://www.facebook.com/sharer/sharer.php?u=&quote="
+                                                 title="Share on Facebook"
+                                                 target="_blank"><img class="share-buttons__image"
+                                                                      alt="Share on Facebook"
+                                                                      src="../images/share-buttons/Facebook.png"/></a>
+            </li>
+            <li class="share-buttons__button"><a href="https://twitter.com/intent/tweet?source=&text=:%20"
+                                                 target="_blank" title="Tweet"><img class="share-buttons__image"
+                                                                                    alt="Tweet"
+                                                                                    src="../images/share-buttons/Twitter.png"/></a>
+            </li>
+            <li class="share-buttons__button"><a href="https://plus.google.com/share?url=" target="_blank"
+                                                 title="Share on Google+"><img class="share-buttons__image"
+                                                                               alt="Share on Google+"
+                                                                               src="../images/share-buttons/Google+.png"/></a>
+            </li>
+            <li class="share-buttons__button"><a href="mailto:?subject=&body=:%20" target="_blank"
+                                                 title="Send email"><img class="share-buttons__image" alt="Send email"
+                                                                         src="../images/share-buttons/Email.png"/></a>
+            </li>
+        </ul>
+
+    </div>
+
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/common.min.js"></script>
+
+</body>
+</html>

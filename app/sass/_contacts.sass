@@ -1,0 +1,113 @@
+$full-width: 100%
+$align-center: center
+$radius: .7%
+$white-color: #FFF
+
+.contacts
+  width: $full-width
+
+.contacts__map-iframe
+  width: $full-width
+  height: 300px
+
+.contacts__form
+  width: 75%
+  margin: 2em auto 2em
+  padding: 2em
+  text-align: $align-center
+  border: solid 1px #928193
+  background: linear-gradient(to left, #a57d7b, #877988, #928193)
+  border-radius: $radius
+
+.contacts__input
+  width: 80%
+  padding: 9px 13px
+  border: solid 1px #e4e7eb
+  outline: none
+  background-color: #f4f7fb
+  color: #746775
+  font-size: 1em
+
+.contacts__input.textarea
+  font-size: 0.8em
+
+.contacts__form
+  .contacts__input[type="submit"]
+    margin: 1em auto
+    border: solid 1px #79687a
+    background: linear-gradient(to left, #7f5e5e, #635764, #635564)
+    color: $white-color
+    width: 95%
+    cursor: pointer
+
+.contacts__input-div
+  margin-top: 1em
+  margin-bottom: 1em
+
+.contacts__form-title
+  font-size: 1.5em
+  font-weight: bold
+  color: $white-color
+  text-shadow: #580c77 0 1px 2px
+
+.contacts__address
+  width: 87%
+  margin: 0 2em
+  padding: .5em
+  top: 10%
+  font-size: 1em
+
+.contacts__address-paragraph
+  padding: 0.5em
+  margin: 0
+  color: #e5be08
+
+.contacts__address-span
+  color: #e54608
+
+.contacts__map,
+.contacts__form
+  margin: 1em auto
+
+@media screen and (max-width: 1023px)
+  .contacts__map
+    width: 50%
+  .contacts__form
+    width: 40%
+
+@media screen and (max-width: 900px)
+  .contacts__map
+    width: 60%
+  .contacts__form
+    width: 50%
+
+@media screen and (max-width: 600px)
+  .contacts__map
+    width: $full-width
+  .contacts__form
+    width: 75%
+
+@media screen and (min-width: 1024px)
+  .contacts
+    width: $full-width
+    display: flex
+  .contacts__map-iframe
+    width: 450px
+    height: 500px
+    padding: 10% 5% 0 0
+  .contacts__map,
+  .contacts__form
+    width: 30%
+    margin: 0 auto
+  .contacts__input
+    font-size: 1em
+  .contacts__input[placeholder]
+    font-size: 0.75em
+  .contacts__form
+    .contacts__input[type="submit"]
+      font-size: 1.1em
+      width: 70%
+  .contacts__address
+    width: 30%
+  .contacts__address-paragraph
+    margin-bottom: 4%

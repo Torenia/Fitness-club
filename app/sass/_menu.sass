@@ -1,0 +1,155 @@
+$full-width: 100%
+$yellow-color: #ffe63b
+
+/*MENU*/
+
+.menu
+  min-height: 70px
+  overflow: auto
+
+.logo
+  display: inline-block
+  float: left
+  margin-top: 0.2em
+
+.logo__img
+  width: $full-width
+
+.menu__item
+  margin: 0 0.9em
+  display: block
+  color: $yellow-color
+  text-align: center
+  padding: 0.73em 0.3em
+  text-decoration: none
+  font-size: 1.2em
+
+.menu__sub-menu
+  .sub-menu__btn
+    font-size: 1.2em
+    border: none
+    outline: none
+    color: $yellow-color
+    padding: 0.73em 0.3em
+    background-color: transparent
+    margin: 0
+
+.sub-menu__content
+  display: none
+  position: absolute
+  width: fit-content
+  background-color: #e4ded5
+  box-shadow: 0 7px 15px 0 rgba(192, 205, 249, 0.2)
+  z-index: 1
+
+.sub-menu__item
+  float: none
+  color: #0d0e49
+  padding: 1em
+  text-decoration: none
+  display: block
+  text-align: left
+
+.menu__item:hover,
+.menu__sub-menu:hover .sub-menu__btn,
+.sub-menu__item:hover
+  color: rgb(229, 66, 8)
+
+@media screen and (min-width: 1024px)
+  .menu__sub-menu:hover .sub-menu__content
+    display: block
+
+@media screen and (min-width: 1024px)
+  .menu,
+  .logo,
+  .menu__navigation
+    margin: 0
+    padding: 0
+    display: inline-block
+  .menu
+    margin-top: 1.5em
+  .logo
+    width: 10%
+  .menu__navigation
+    width: 89%
+    overflow: hidden
+    margin-bottom: 0.5em
+    margin-right: 0.5em
+  .menu__item
+    float: left
+    margin: 0 1em
+    &.icon
+      display: none
+  .menu__sub-menu
+    float: left
+    overflow: hidden
+    margin: 0 1em
+
+@media screen and (max-width: 1023px)
+  .logo
+    width: 12%
+  .menu__item,
+  .menu__sub-menu .sub-menu__btn
+    display: none
+  .menu__item.icon
+    float: right
+    display: block
+    margin: 0 0.5em
+    font-size: 1.5em
+  .menu__navigation
+    width: 50%
+    float: right
+    display: inline-block
+  .menu__navigation.menu__responsive
+    position: relative
+    .icon
+      position: absolute
+      right: 0
+      top: 0
+    .menu__item
+      float: none
+      display: block
+      text-align: left
+    .menu__sub-menu
+      float: none
+      padding: 0.73em 1.3em
+    .sub-menu__content
+      position: relative
+    .menu__sub-menu .sub-menu__btn
+      display: block
+      width: $full-width
+      text-align: left
+  .menu__sub-menu .sub-menu__visible-menu
+    display: block
+
+@media screen and (max-width: 600px)
+  .menu__navigation
+    width: 79%
+  .logo
+    width: 21%
+
+/*SEARCH FIELD*/
+
+@media screen and (min-width: 1024px)
+  .search
+    float: right
+    margin-top: 0.5em
+    margin-right: 1em
+  .search__input[type=text]
+    padding: 0.5em
+    font-size: 1em
+    border: none
+    width: 6em
+  .search__button
+    float: right
+    padding: 0.5em
+    background: #ddd
+    font-size: 1em
+    border: none
+    cursor: pointer
+    &:hover
+      background: #ccc
+
+@media screen and (max-width: 1023px)
+  .search
+    display: none

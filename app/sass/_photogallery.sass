@@ -1,0 +1,106 @@
+$full-width: 100%
+
+/*PHOTOGALLERY*/
+
+.photogallery
+  width: $full-width
+  padding-bottom: 4em
+
+.photogallery__photo-container
+  max-width: 300px
+  height: 15em
+  margin: 1em auto
+  padding: 5px
+
+.photogallery__photo
+  display: block
+  transform: translateX(-50%)
+  margin-left: 50%
+  width: $full-width
+  height: 100%
+  object-fit: cover
+  border: solid 1px #bb8b8b
+
+.photogallery__title
+  text-align: center
+  font-size: 2.5em
+  color: #e46312
+  text-shadow: #ee8220 0 0.5px 1px
+
+@media screen and (min-width: 700px)
+  .photogallery__photobox
+    width: 665px
+    margin: 0 auto
+  .photogallery
+    overflow: hidden
+    display: block
+    margin: 0
+    padding-bottom: 3em
+  .photogallery__photo-container
+    display: inline-block
+    margin: .5em
+    padding: .4em
+    overflow: hidden
+    width: 300px
+    height: 300px
+  .photogallery__photo
+    min-width: 100%
+
+@media screen and (min-width: 1024px)
+  .photogallery__photobox
+    width: 1000px
+  .photogallery
+    margin: 0
+
+/*PAGINATION*/
+
+.pagination
+  transform: translateX(-50%)
+  margin-left: 50%
+  width: 15em
+
+.pagination__prev,
+.pagination__next,
+.photogallery__number-page,
+.pagination__button
+  background: linear-gradient(to left, #a57d7b, #877988, #928193)
+  color: #FFF
+  text-shadow: #580c77 0 1px 2px
+  font-size: 1em
+  padding: 8px 16px
+  border: 1px solid #DDD
+  border-radius: 10%
+
+.pagination__prev,
+.pagination__next,
+.pagination__button
+  text-decoration: none
+  cursor: pointer
+
+.pagination__blocks
+  display: inline-block
+
+.pagination__prev:hover,
+.pagination__next:hover
+  background: linear-gradient(to left, #8a6767, #6b5f6c, #827183)
+
+.photogallery__number-page
+  width: 2.3em
+  text-align: center
+  margin: 3%
+  transform: translateX(-50%)
+  margin-left: 50%
+
+.pagination__blocks
+  margin: 0
+
+.photogallery__number-page
+  margin: 1%
+  margin-left: 50%
+
+@media screen and (min-width: 1024px)
+  .pagination__prev,
+  .pagination__next,
+  .photogallery__number-page,
+  .pagination__button
+    font-size: 1.1em

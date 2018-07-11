@@ -1,0 +1,231 @@
+
+%text-color
+  color: #ef8122
+  text-shadow: #e54208 0 0.5px 1px
+
+$full-width: 100%
+$border-color: #79687a
+
+/*SHEDULE*/
+
+#training-box
+  width: $full-width
+
+.training
+  color: #ffe63b
+
+.training__title,
+.training-heading
+  @extend %text-color
+  text-align: center
+
+.training__condition
+  @extend %text-color
+  padding: 1em
+
+.training__week-day
+  background: linear-gradient(to right, #0b2e4c, #194367, #061929)
+  color: #fff8ee
+  margin: 0
+  padding: 1em
+  text-align: center
+
+.training__list > li
+  list-style-type: none
+  text-align: left
+  cursor: pointer
+  padding: 0.2em 0.3em
+
+.training__list > li:last-child
+  color: coral
+
+.training__list > li:first-child
+  color: #fb9934
+  font-weight: bold
+  font-size: 1.2em
+
+.training__list
+  background-color: #393939
+  padding: 0 0.3em
+  margin: 0.2em
+
+.training__box
+  display: inline-block
+  width: $full-width
+  margin: 0.2em
+  border: 2px solid #fbe313
+  border-radius: 5px
+  vertical-align: top
+
+.training__schedule
+  margin: 0 auto
+
+@media screen and (min-width: 1024px)
+  .training__box
+    width: 13.2%
+  .training__schedule
+    width: 95%
+  .training__title
+    padding-top: 0
+
+@media screen and (max-width: 1023px)
+  .training__box
+    width: 18.7%
+  .training__schedule
+    width: 90%
+
+@media screen and (max-width: 900px)
+  .training__box
+    width: 31.4%
+  .training__schedule
+    width: 90%
+
+@media screen and (max-width: 600px)
+  .training__box
+    width: 46.9%
+  .training__schedule
+    width: 90%
+
+@media screen and (max-width: 375px)
+  .training__box
+    display: block
+    width: $full-width
+    margin: 1em auto
+  .training__schedule
+    width: 60%
+  .training__list
+    padding: 0 1em
+
+/*MODAL WINDOW*/
+
+.modal,
+.modal-ansver
+  display: none
+  position: fixed
+  z-index: 1
+  padding-top: 100px
+  left: 0
+  top: 0
+  width: $full-width
+  height: 100%
+  overflow: auto
+  background-color: rgba(0, 0, 0, 0.4)
+
+.modal__content,
+.modal-ansver__content
+  position: absolute
+  left: 12%
+  top: 20%
+  background-color: #fefefe
+  margin: auto
+  padding: 20px
+  width: 70%
+  text-align: center
+  border: solid 1px $border-color
+  border-radius: 2%
+  background: linear-gradient(to left, #bb8b8b, #e1a8a8, #EEB2B2)
+  opacity: .95
+  font-size: 1.5em
+  color: #442f2f
+  text-shadow: #400b55 0 .5px .5px
+
+.modal-ansver__content
+  color: #a80000
+  font-weight: bold
+
+.modal__close,
+.modal-ansver__close
+  margin-top: -7%
+  color: #AAA
+  float: right
+  font-size: 2em
+  font-weight: bold
+  &:hover,
+  &:focus
+    color: #000
+    text-decoration: none
+    cursor: pointer
+
+.modal__input
+  font-size: 0.7em
+  width: 70%
+
+.modal__button
+  margin: 1em auto
+  border: solid 1px $border-color
+  border-radius: 2%
+  background: linear-gradient(to left, #7f5e5e, #635764, #635564)
+  color: #FFF
+  width: 50%
+  cursor: pointer
+  font-size: 0.9em
+
+@media screen and (min-width: 600px)
+  .modal__content,
+  .modal-ansver__content
+    left: 20%
+    width: 50%
+
+@media screen and (min-width: 1024px)
+  .modal__content,
+  .modal-ansver__content
+    left: 30%
+    width: 30%
+    font-size: 1.5em
+  .modal__content,
+  .modal-ansver__content
+    top: 30%
+
+#warning
+  color: #d50000
+  font-weight: bold
+
+/*PERSONAL TRAINING*/
+
+.training-heading
+  margin-top: 1em
+
+.subscription-box
+  width: 70%
+  margin: 2em auto
+
+.subscription-box__subscription
+  display: block
+  border: solid 2px #cfb911
+  border-radius: 2%
+  text-align: center
+  width: $full-width
+  background: linear-gradient(to left, #745160, #745160, #742d3f)
+  cursor: pointer
+  margin: 1em 0.5em
+
+.subscription-box__heading
+  color: #f69b31
+  font-size: 1.2em
+
+.subscription-box__heading
+  padding: 1em
+
+.subscription-box__condition
+  padding: 0.5em
+
+.subscription-box__condition
+  color: #e4ded5
+  font-size: 1.2em
+
+@media screen and (min-width: 600px)
+  .subscription-box__subscription
+    width: 50%
+    margin: 1em auto
+
+@media screen and (min-width: 900px)
+  .subscription-box
+    display: flex
+    width: 90%
+    height: 250px
+    margin: 0 auto
+    flex-wrap: wrap
+    align-content: stretch
+  .subscription-box__subscription
+    width: 25%
+    height: 190px

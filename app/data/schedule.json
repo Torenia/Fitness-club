@@ -1,0 +1,286 @@
+[
+  {
+    "day": "Monday",
+    "training": [
+      {
+        "name": "Stretching",
+        "time": "09:00 - 10:00",
+        "trainer": "Emma Dolphin",
+        "allPlaces": "15",
+        "freePlaces": "7",
+        "uniqueId":"1"
+      },
+      {
+        "name": "Interval training",
+        "time": "11:00 - 12:00",
+        "trainer": "Todd Hunter",
+        "allPlaces": "20",
+        "freePlaces": "3",
+        "uniqueId":"2"
+      },
+      {
+        "name": "Pilates",
+        "time": "18:00 - 19:00",
+        "trainer": "Karen Steele",
+        "allPlaces": "20",
+        "freePlaces": "5",
+        "uniqueId":"3"
+      },
+      {
+        "name": "Sculpt",
+        "time": "19:00 - 20:00",
+        "trainer": "Ben Johnstone",
+        "allPlaces": "15",
+        "freePlaces": "0",
+        "uniqueId":"4"
+      },
+      {
+        "name": "Yoga",
+        "time": "20:00 - 21:00",
+        "trainer": "Ben Johnstone",
+        "allPlaces": "15",
+        "freePlaces": "1",
+        "uniqueId":"5"
+      }
+    ]
+  },
+  {
+    "day": "Tuesday",
+    "training": [
+      {
+        "name": "Yoga",
+        "time": "10:00 - 11:00",
+        "trainer": "Ben Johnstone",
+        "allPlaces": "15",
+        "freePlaces": "3",
+        "uniqueId":"6"
+      },
+      {
+        "name": "Pilates",
+        "time": "12:00 - 13:00",
+        "trainer": "Karen Steele",
+        "allPlaces": "20",
+        "freePlaces": "15",
+        "uniqueId":"7"
+      },
+      {
+        "name": "Sculpt",
+        "time": "15:00 - 16:00",
+        "trainer": "Ben Johnstone",
+        "allPlaces": "15",
+        "freePlaces": "4",
+        "uniqueId":"8"
+      },
+      {
+        "name": "Zumba",
+        "time": "17:00 - 18:00",
+        "trainer": "Emma Dolphin",
+        "allPlaces": "15",
+        "freePlaces": "1",
+        "uniqueId":"9"
+      },
+      {
+        "name": "Interval training",
+        "time": "20:00 - 21:00",
+        "trainer": "Todd Hunter",
+        "allPlaces": "20",
+        "freePlaces": "0",
+        "uniqueId":"10"
+      }
+    ]
+  },
+  {
+    "day": "Wednesday",
+    "training": [
+      {
+        "name": "Stretching",
+        "time": "09:00 - 10:00",
+        "trainer": "Emma Dolphin",
+        "allPlaces": "15",
+        "freePlaces": "7",
+        "uniqueId":"11"
+      },
+      {
+        "name": "Interval training",
+        "time": "11:00 - 12:00",
+        "trainer": "Todd Hunter",
+        "allPlaces": "20",
+        "freePlaces": "2",
+        "uniqueId":"12"
+      },
+      {
+        "name": "Pilates",
+        "time": "18:00 - 19:00",
+        "trainer": "Karen Steele",
+        "allPlaces": "20",
+        "freePlaces": "0",
+        "uniqueId":"13"
+      },
+      {
+        "name": "Sculpt",
+        "time": "19:00 - 20:00",
+        "trainer": "Ben Johnstone",
+        "allPlaces": "15",
+        "freePlaces": "8",
+        "uniqueId":"14"
+      },
+      {
+        "name": "Yoga",
+        "time": "20:00 - 21:00",
+        "trainer": "Ben Johnstone",
+        "allPlaces": "15",
+        "freePlaces": "2",
+        "uniqueId":"15"
+      }
+    ]
+  },
+  {
+    "day": "Thursday",
+    "training": [
+      {
+        "name": "Yoga",
+        "time": "10:00 - 11:00",
+        "trainer": "Ben Johnstone",
+        "allPlaces": "15",
+        "freePlaces": "0",
+        "uniqueId":"16"
+      },
+      {
+        "name": "Pilates",
+        "time": "12:00 - 13:00",
+        "trainer": "Karen Steele",
+        "allPlaces": "20",
+        "freePlaces": "12",
+        "uniqueId":"17"
+      },
+      {
+        "name": "Sculpt",
+        "time": "15:00 - 16:00",
+        "trainer": "Ben Johnstone",
+        "allPlaces": "15",
+        "freePlaces": "10",
+        "uniqueId":"18"
+      },
+      {
+        "name": "Stretching",
+        "time": "17:00 - 18:00",
+        "trainer": "Emma Dolphin",
+        "allPlaces": "15",
+        "freePlaces": "0",
+        "uniqueId":"19"
+      },
+      {
+        "name": "Interval training",
+        "time": "20:00 - 21:00",
+        "trainer": "Todd Hunter",
+        "allPlaces": "20",
+        "freePlaces": "4",
+        "uniqueId":"20"
+      }
+    ]
+  },
+  {
+    "day": "Friday",
+    "training": [
+      {
+        "name": "Stretching",
+        "time": "09:00 - 10:00",
+        "trainer": "Emma Dolphin",
+        "allPlaces": "15",
+        "freePlaces": "8",
+        "uniqueId":"21"
+      },
+      {
+        "name": "Interval training",
+        "time": "11:00 - 12:00",
+        "trainer": "Todd Hunter",
+        "allPlaces": "20",
+        "freePlaces": "14",
+        "uniqueId":"22"
+      },
+      {
+        "name": "Pilates",
+        "time": "18:00 - 19:00",
+        "trainer": "Karen Steele",
+        "allPlaces": "20",
+        "freePlaces": "7",
+        "uniqueId":"23"
+      },
+      {
+        "name": "Sculpt",
+        "time": "19:00 - 20:00",
+        "trainer": "Ben Johnstone",
+        "allPlaces": "15",
+        "freePlaces": "0",
+        "uniqueId":"24"
+      },
+      {
+        "name": "Yoga",
+        "time": "20:00 - 21:00",
+        "trainer": "Ben Johnstone",
+        "allPlaces": "15",
+        "freePlaces": "3",
+        "uniqueId":"25"
+      }
+    ]
+  },
+  {
+    "day": "Saturday",
+    "training": [
+      {
+        "name": "Yoga",
+        "time": "11:00 - 12:00",
+        "trainer": "Ben Johnstone",
+        "allPlaces": "15",
+        "freePlaces": "1",
+        "uniqueId":"26"
+      },
+      {
+        "name": "Zumba",
+        "time": "12:00 - 13:00",
+        "trainer": "Emma Dolphin",
+        "allPlaces": "15",
+        "freePlaces": "0",
+        "uniqueId":"27"
+      },
+      {
+        "name": "Interval training",
+        "time": "13:00 - 14:00",
+        "trainer": "Todd Hunter",
+        "allPlaces": "20",
+        "freePlaces": "0",
+        "uniqueId":"28"
+      },
+      {
+        "name": "Sculpt",
+        "time": "14:00 - 15:00",
+        "trainer": "Ben Johnstone",
+        "allPlaces": "15",
+        "freePlaces": "2",
+        "uniqueId":"29"
+      }
+    ]
+  },
+  {
+    "day": "Sunday",
+    "training": [
+      {
+        "name": "Stretching",
+        "time": "12:00 - 13:00",
+        "trainer": "Emma Dolphin",
+        "allPlaces": "15",
+        "freePlaces": "0",
+        "uniqueId":"30"
+      },
+      {
+        "name": "Interval training",
+        "time": "13:00 - 14:00",
+        "trainer": "Todd Hunter",
+        "allPlaces": "20",
+        "freePlaces": "10",
+        "uniqueId":"31"
+      }
+    ]
+  }
+]
+

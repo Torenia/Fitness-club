@@ -1,0 +1,66 @@
+
+%text-color
+  color: #ef8122
+  text-shadow: #e54208 0 1.3px 1px
+
+$margin-center: 0 auto
+$full-width: 100%
+
+*
+  margin: 0
+  padding: 0
+  font-family: 'Open Sans', sans-serif
+
+body
+  background: url(../images/background/background.jpg) no-repeat fixed
+  background-size: cover
+
+.content
+  width: 90%
+  font-size: 1.2em
+  padding: 0 5%
+  margin-bottom: 1em
+
+.content__title
+  @extend %text-color
+  text-align: center
+
+.content__heading
+  @extend %text-color
+  padding: 0.3em
+
+.content__information
+  text-align: justify
+  color: #b9ab27
+  padding: 0.5em
+
+.content__img
+  width: $full-width
+
+@media screen and (min-width: 1024px)
+  .content
+    width: 85%
+  .content__scheme
+    width: 40%
+    margin: $margin-center
+
+@media screen and (max-width: 1023px)
+  .content__scheme
+    width: 50%
+    margin: $margin-center
+  .content__title
+    font-size: 1.7em
+  .content__heading
+    font-size: 1.3em
+
+@media screen and (max-width: 600px)
+  .content__scheme
+    width: $full-width
+    margin: $margin-center
+
+.services__img
+  margin: 7px 7px 7px 7px
+
+@media screen and (max-width: 350px)
+  .services__img
+    width: 270px
