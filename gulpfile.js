@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     concat = require('gulp-concat'),
     concatCss = require('gulp-concat-css'),
+    rigger = require('gulp-rigger'),
     uglify = require('gulp-uglifyjs');
 
 gulp.task('browser-sync', [
@@ -52,8 +53,9 @@ gulp.task('scriptsCommon', function () {
 });
 
 
-gulp.task('html', function () {
+gulp.task('html', function() {
     return gulp.src('app/**/*.html')
+        .pipe(rigger())
         .pipe(gulp.dest('dist/'));
 });
 

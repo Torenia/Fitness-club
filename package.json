@@ -1,6 +1,6 @@
 {
   "name": "Fitness-club",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Fitness-club project",
   "devDependencies": {
     "browser-sync": "^2.11.0",
@@ -11,9 +11,9 @@
     "gulp-imagemin": "^2.4.0",
     "gulp-minify-css": "^1.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-jade": "^1.1.0",
     "gulp-sass": "^4.0.1",
     "gulp-uglifyjs": "^0.6.2",
+    "gulp-rigger": "^0.5.8",
     "node-bourbon": "^4.2.3"
   },
   "scripts": {

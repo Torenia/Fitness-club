@@ -68,7 +68,7 @@ function closeModalAnsver() {
 }
 
 window.onclick = function (event) {
-    if (event.target === ansverModal || event.target === preventionModal || event.target === Modal) {
+    if (event.target === ansverModal || event.target === preventionModal || event.target === Modal || event.target === formModal || event.target === personalFormModal) {
         event.target.style.display = "none";
     }
 };
@@ -130,6 +130,50 @@ function formConditions() {
     }
 }
 
+
+// The modal window for personal training form
+
+var personalFormModal = document.getElementById("personal-modal");
+
+function personalFormModalAnver(e) {
+
+    e.preventDefault();
+
+    personalFormModal.style.display = "block";
+
+    var name = $("#personal-name").val();
+    var phone = $("#personal-phone").val();
+    var time = $("#preferred-time").val();
+
+    if ((name == null || name === "") && (phone == null || phone === "") && (time == null || time === "")) {
+        $("#personal-ansver").html("Please enter your name, phone number and preferred time!");
+        return false;
+    }
+    else if (name == null || name === "") {
+        $("#personal-ansver").html("Please enter your name!");
+        return false;
+    }
+    else if (phone == null || phone === "") {
+        $("#personal-ansver").html("Please enter your phone number!");
+        return false;
+    }
+    else if (time == null || time === "") {
+        $("#personal-ansver").html("Please enter preferred time!");
+        return false;
+    }
+    else {
+        $("#personal-ansver").html("Thank you! We will contact you");
+        return false;
+    }
+
+}
+
+function closePersonalFormModalAnsver() {
+    personalFormModal.style.display = "none";
+}
+
+
+$("#personal-submit").on("click", personalFormModalAnver);
 
 
 
