@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Fitness-club project",
   "devDependencies": {
-    "browser-sync": "^2.29.3",
+    "browser-sync": "^3.0.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.0",
